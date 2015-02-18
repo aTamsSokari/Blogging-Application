@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+body {
+	width: 75%;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	margin-top: 10px;
+	background: #CCCCFF;
+	overflow: hidden;
+	padding: 10px;
+	/*font-family: 'Lato', sans-serif;*/
+}
+
+header h1 {
+	font-family: "Playball", cursive;
+}
+
+h1 {
+	font-size: 300%;
+}
+
+h2 {
+	font-size: 250%;
+	font-family: Nunito;
+}
+
+h4 {
+	font-size: 150%;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+}
+
+.button {
+    background-color: #09C;
+    color: #fff;
+    float: right;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    width: 95px;
+    height: 45px;
+}
+
+.create-btn {
+    background-color: #09C;
+    color: #fff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.form-btn {
+	float: right;
+	margin-top: 20px;
+	margin-right: 0;
+}
+
+section {
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+form    {
+margin-top: 20px;
+background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+position:relative;
+width:100%;
+height:450px;
+font-family: 'Open Sans' sans-serif;
+font-size: 20px;
+line-height: 24px;
+font-weight: bold;
+color: #999999;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+border: 1px solid #999;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+input    {
+width:375px;
+display:block;
+border: 1px solid #999;
+height: 25px;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+background:#3366FF;
+color:#FFFFFF;
+}

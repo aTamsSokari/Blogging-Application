@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+	<title>Blogging Application</title>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+	<h1>Welcome to <span id="name">David's</span> Blog</h1>
+	<a href="formPage.html"><button class="button">New Post</button></a>
+	</header>
+	<section>
+	</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+		document.body.onload = function(){
+		/*var name = prompt("What is your name?");
+		if (localStorage.getItem("name") == null){
+			localStorage.setItem("name", name);
+		}
+		else{
+			var name_check = localStorage.getItem("name");
+			if (name.toUpperCase() !== name_check.toUpperCase()){
+				localStorage.removeItem("posts");
+				localStorage.setItem("name", name);
+			}
+		}
+		document.getElementById("name").innerHTML = name+"'s";
+		*/
+
+		if (localStorage.getItem("posts") == null){
+			var str = "<h2> Welcome! </h2>"+"<p>Click the New Post button to the upper right to get started sharing your unique thoughts!</p>";
+			$("section").append(str);
+		}
+		else{
+		$("section").empty();
+
+		var entries = JSON.parse(localStorage.getItem("posts"));
+		for (entry in entries) {
+			var str = "<article><h2>"+entries[entry].title+"</h2><h4><strong>Category</strong>: "+entries[entry].category+"</h4><p>"+entries[entry].content+"</p></article><hr/>";
+			$("section").prepend(str);
+		}
+	}
+	};
+	</script>
+</body>
