@@ -8,6 +8,8 @@
 			title: title,
 			category: category,
 			content: content	
+			date : new Date().toDateString(),
+			time: new Date().toLocaleTimeString()	
 		};
 		var posts;
 		if (localStorage.getItem("posts") == null){
@@ -31,7 +33,9 @@ document.body.onload = function(){
 				var obj = {
 			title: title,
 			category: category,
-			content: content	
+			content: content,
+			date : new Date().toDateString(),
+			time: new Date().toLocaleTimeString()	
 		};
 		var posts;
 		if (localStorage.getItem("posts") == null){

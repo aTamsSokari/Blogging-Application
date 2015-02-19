@@ -41,7 +41,7 @@
 
 		var entries = JSON.parse(localStorage.getItem("posts"));
 		for (entry in entries) {
-			var str = "<article><h2>"+entries[entry].title+"</h2><h4><strong>Category</strong>: "+entries[entry].category+"</h4><p>"+entries[entry].content+"</p></article><hr/>";
+			var str = "<article><h2>"+entries[entry].title+"</h2><h4><strong>Category</strong>: "+entries[entry].category+"</h4><h5>"+entries[entry].date+", "+entries[entry].time+"</h5><p>"+entries[entry].content+"</p></article><hr/>";
 			$("section").prepend(str);
 		}
 	}
