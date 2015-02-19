@@ -5,10 +5,10 @@ body {
 
 header {
 	width: 100%;
-	margin-top: 10px;
-	background: #CCCCFF;
+	margin-top: 15px;
+	background: rgba(222,222,222,0.5);
 	overflow: hidden;
-	padding: 10px;
+	padding: 15px;
 }
 
 h1 {
@@ -55,10 +55,7 @@ section {
 
 form    {
 margin-top: 20px;
-background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
-background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-position:relative;
-width:98%;
+width:98.5%;
 height:460px;
 font-family: 'Open Sans' sans-serif;
 line-height: 24px;
